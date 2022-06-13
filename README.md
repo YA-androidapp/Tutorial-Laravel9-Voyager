@@ -28,6 +28,21 @@ nano docker-compose.yml
 ./vendor/bin/sail php artisan lang:add ja
 ```
 
+## Voyager のインストール
+
+```bash
+nano .env
+# APP_URL=http://localhost
+
+./vendor/bin/sail composer require tcg/voyager
+./vendor/bin/sail php artisan voyager:install --with-dummy
+```
+
+- email: admin@admin.com
+- password: password
+
+- [http://localhost/admin](http://localhost/admin)
+
 ---
 
 Copyright (c) 2022 YA-androidapp(<https://github.com/YA-androidapp>) All rights reserved.

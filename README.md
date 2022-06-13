@@ -8,8 +8,9 @@
 
 ```bash
 curl -s "https://laravel.build/laravel9-voyager" | bash
-cd laravel-sail-example-app && ./vendor/bin/sail up -d
+cd laravel9-voyager && ./vendor/bin/sail up -d
 nano docker-compose.yml
+
 ./vendor/bin/sail up -d
 
 ./vendor/bin/sail composer require laravel/breeze --dev
